@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Excercie_2_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_button" translatesAutoresizingMaskIntoConstraints="NO" id="31V-en-WGx">
+                                <rect key="frame" x="20" y="71" width="146" height="109"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_button" translatesAutoresizingMaskIntoConstraints="NO" id="ukL-dv-KPv">
+                                <rect key="frame" x="116" y="69" width="230" height="113"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myf-xp-oBq">
+                                <rect key="frame" x="171" y="249" width="120" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="remove_blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uip-xE-Zqf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-tx-Aa6">
+                                <rect key="frame" x="31" y="263" width="124" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="remove_red:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DX7-Gq-XYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blue_button" destination="ukL-dv-KPv" id="vaX-rX-Pmh"/>
+                        <outlet property="hide_blue" destination="myf-xp-oBq" id="Zmh-nL-lzP"/>
+                        <outlet property="hide_red" destination="3Fw-tx-Aa6" id="0P3-Qe-qb1"/>
+                        <outlet property="red_button" destination="31V-en-WGx" id="fW2-NR-Mie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="407"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue_button" width="160" height="160"/>
+        <image name="red_button" width="160" height="160"/>
+    </resources>
+</document>
